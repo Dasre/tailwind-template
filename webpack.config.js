@@ -52,9 +52,9 @@ module.exports = {
       filename: "index.[hash].css",
     }),
     new CleanWebpackPlugin(),
-    new CopyPlugin({
-      patterns: [{ from: "./static", to: "./static" }],
-    }),
+    // new CopyPlugin({
+    //   patterns: [{ from: "./static", to: "./static" }],
+    // }),
     new webpack.DefinePlugin({
       // Definitions...
       PRODUCTION: JSON.stringify(false),
